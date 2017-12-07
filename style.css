@@ -1,0 +1,212 @@
+*, *::after { /*-- selects everything and everything::after --*/
+  box-sizing: border-box; /*-- calculates padding as size of box --*/
+}
+#page {
+  width: 85%; /*-- restricts page width --*/
+  margin: 0 auto; /*-- uses auto margin to center everything --*/
+  background-color: rgba(255, 231, 120, 0.9);
+}
+/*-- Rules for Grid --*/
+.container { /*-- selects wrapper element --*/
+  margin-top: 5em;
+  display: grid; /*-- sets display to grid --*/
+  grid-template-columns: 1fr; /*-- sets the columns to 1 at smallest screen sizes --*/
+  grid-template-rows: auto; /*-- auto numbering of rows --*/
+  grid-gap: 3em 1em; /*-- sets top-bottom and left-right space between grid cells --*/
+}
+@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
+  .container {grid-template-columns: repeat(2, 1fr);} /*-- increases column count to 2--*/
+  .card:first-child {grid-column: 1/ span 2;} /*-- allow first item to span 2 cells when screen is larger--*/
+}
+@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
+  .container {grid-template-columns: repeat(3, 1fr);} /*-- increase column count to 3 --*/
+}
+@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
+  .container {grid-template-columns: repeat(4, 1fr);} /*-- increase column count to 4 --*/
+}
+.card {
+  position: relative; /*-- positions each card so children can be positioned --*/
+  border: 1px solid #ccc; /*-- crappy border --*/
+  padding: 8px; /*-- small space inside each card--*/
+  background: rgba(255, 231, 191, 0.9);
+}
+.thumb1 { /*-- card images --*/
+  background-image: url('http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/8/29/1/FNM_100111-Poutine-002_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383239551554.jpeg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb2 { /*-- card images --*/
+  background-image: url('https://www.ottawatourism.ca/wp-content/uploads/2015/03/Beavertails_products.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb3 { /*-- card images --*/
+  background-image: url('http://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2013/6/25/0/CCBKN111_Ricotta-Crepes-recipe-2_s4x3.jpg.rend.hgtvcom.616.462.suffix/1372183750173.jpeg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb4 { /*-- card images --*/
+  background-image: url('https://area-info.net/wp-content/uploads/2017/09/Maple-Syrup-Market.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb5 { /*-- card images --*/
+  background-image: url('http://www.foodiepilgrim.com/sites/default/files/images/Food/Seafood/Food_Pies_SeaClamPieCut.JPG'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb6 { /*-- card images --*/
+  background-image: url('http://www.yarmouthandacadianshores.com/images/product-images/RappiePie_-_Section_Page_Item.jpg.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb7 { /*-- card images --*/
+  background-image: url('https://images.ricardocuisine.com/services/recipes/500x675_4365.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb8 { /*-- card images --*/
+  background-image: url('http://www.creationfood.ca/wp-content/uploads/2015/02/Butter_tart.png'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb9 { /*-- card images --*/
+  background-image: url('https://www.mmfoodmarket.com/images/default-source/default-album/nanaimo-bars.jpg?sfvrsn=81fe4977_0'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb10 { /*-- card images --*/
+  background-image: url('http://www.simplebites.net/wp-content/uploads/2010/12/tourtiere-cut-e1292808300322.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb11 { /*-- card images --*/
+  background-image: url('http://media.foodnetwork.ca/recipetracker/65df2d84-471c-4b85-9208-22a9be955e4f_sugar-pie_WebReady.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb12 { /*-- card images --*/
+  background-image: url('http://3k0j0647ji3n23p72y2u5n65-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/Roast-Peameal-Bacon-4.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb13 { /*-- card images --*/
+  background-image: url('https://cdn3.volusion.com/gcyqz.wukug/v/vspfiles/photos/0-60629-92158-2-2.jpg?1425890886'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.thumb14 { /*-- card images --*/
+  background-image: url('http://gypsynester.com/wp-content/uploads/2016/07/weird-food-fish-brewis-1.jpg'); /*-- sets background image --*/
+  padding-bottom: 60%; /*-- creates space below the image--*/
+  background-size: cover; /*-- sets it to cover the div --*/
+  background-position: center center; /*-- positions image in center vert. and horiz. --*/
+}
+.link {
+  position: absolute; /*-- sets button position to absolute --*/
+  top: .5em; /*-- half a line from the top --*/
+  right: .5em; /*-- half a line from the right--*/
+  padding: .3em .6em .4em .6em; /*-- spacing inside the button --*/
+  border-radius: 50%;
+  font-size: 22px;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  background-color: rgba(0, 147, 255, 0.9);
+  opacity: .9;
+}
+.link:hover {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  opacity: 1;
+}
+/*-- Styles for slideshow --*/
+.slideshow-wrapper {
+  position: relative; /*-- this allows children to be position absolutely --*/
+  margin: auto; /*-- simple centering method--*/
+  margin-top: 2em; /*-- adds space above--*/
+  max-width: 1440px; /*-- contrains slideshow on largest screens --*/
+}
+.slideshow-wrapper img {
+  width: 100%; /*-- makes slideshow responsive in size --*/
+}
+.prev, .next {
+  cursor: pointer; /*-- changes hover cursor to the hand --*/
+  position: absolute; /*-- positions arrows absolutely--*/
+  top: 50%; /*-- positions arrows half the height of parent from top --*/
+  width: auto; /*-- matches width of parent --*/
+  padding: 16px; /*-- adds a little bit of space--*/
+  margin-top: -22px; /*-- adjusts position by height of arrows --*/
+  color: white; /*-- sets color for contrast --*/
+  font-weight: bold; /*-- selects heavier font --*/
+  font-size: 18px; /*-- sets arrow font size --*/
+  transition: 0.6s ease; /*-- sets transition speed for arrow hover--*/
+  border-radius: 0 3px 3px 0; /*-- slightly rounds inside borders --*/
+}
+.next {
+  right: 0; /*-- positions next arrow hard right --*/
+  border-radius: 3px 0 0 3px; /*-- rounds the outside borders --*/
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /*-- gives a background for contrast on hover --*/
+}
+.text-center {
+  text-align: center; /*-- aligns indicators center --*/
+}
+.captiontext {
+  background: gold;
+  color: black; /*-- sets color to almost white --*/
+  font-size: 22px; /*-- sets font size --*/
+  padding: 8px 12px; /*-- sets caption padding --*/
+  position: absolute; /*-- positions caption text absolutely--*/
+  bottom: 8px; /*-- sets position 8px from bottom --*/
+  width: 100%; /*-- sets width equal to container width --*/
+  text-align: center; /*-- aligns text center --*/
+}
+.numberof {
+  color: #f2f2f2; /*-- sets color to almost white --*/
+  font-size: 12px; /*-- sets font size --*/
+  padding: 8px 12px; /*-- sets numberof padding --*/
+  position: absolute; /*-- positions numberof text absolutely--*/
+  top: 0; /*-- sets position hard to the top--*/
+}
+.indicator {
+  cursor:pointer; /*-- changes hover cursor to the hand --*/
+  height: 13px; /*-- sets height of dots --*/
+  width: 13px; /*-- sets width of dots --*/
+  margin: 0 2px; /*-- adds margin between dots --*/
+  background-color: #bbb; /*-- sets background color to light gray --*/
+  border-radius: 50%; /*-- makes dots fully round --*/
+  display: inline-block; /*-- displays in a horizontal line --*/
+  transition: background-color 0.6s ease; /*-- allows background change to take time --*/
+}
+.active, .indicator:hover {
+  background-color: #717171; /*-- changes background color on hover/active to darker gray  --*/
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade; /*-- webkit prefix  --*/
+  -webkit-animation-duration: 1.5s; /*-- webkit prefix --*/
+  animation-name: fade; /*-- defines which animation to use --*/
+  animation-duration: 1.5s; /*-- sets the duration --*/
+}
+@-webkit-keyframes fade { /*-- webkit prefix --*/
+  from {opacity: .4}
+  to {opacity: 1}
+@keyframes fade { /*-- sets "fade" animation properties --*/
+  from {opacity: .4} /*-- sets start of animation --*/
+  to {opacity: 1} /*-- sets end of animation --*/
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}

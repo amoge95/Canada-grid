@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Grid Sample</title>
+  </head>
+  <body id="page">
+    <div class="slideshow-wrapper">
+      <div class="slide fade">
+        <div class="numberof">1 of 4</div>
+        <img src="https://www.quebecoriginal.com/sites/default/files/mtl-h-11676h_2.jpg"/>
+        <div class="captiontext">Old Port Montreal at night.</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">2 of 4</div>
+        <img src="http://localmontrealtours.com/wp-content/uploads/2015/05/underground-city-montreal.jpg"/>
+        <div class="captiontext">Underground Montreal</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">3 of 4</div>
+        <img src="http://www.readersdigest.ca/wp-content/uploads/2016/05/basilique-notre-dame-montreal-quebec.jpg"/>
+        <div class="captiontext">Notre-Dame Basilica.</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">4 of 4</div>
+        <img src="http://montrealvisitorsguide.com/wp-content/uploads/montreal-mount-royal-main.jpg"/>
+        <div class="captiontext">View of Montreal from Mount Royal.</div>
+      </div><!-- end .slide.fade -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
+        <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
+    </div><!--end slideshow-wrapper-->
+    <br>
+    <div class="text-center">
+      <span class="indicator" onclick="currentSlide(1)"></span>
+      <span class="indicator" onclick="currentSlide(2)"></span>
+      <span class="indicator" onclick="currentSlide(3)"></span>
+      <span class="indicator" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="video">
+          <iframe width="500" height="281" src="https://www.youtube.com/embed/bN0iD1E1VF8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb1"></div>
+        <h2>Poutine</h2>
+        <p>The national dish of Canada made with fries, gravy, and cheese curds.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb2"></div>
+        <h2>Beaver Tails</h2>
+        <p>A popular Canadian dessert made out of flattened fried dough; topped off with other sweets like
+        chocolate sauce and marshmallows.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb3"></div>
+        <h2>Crêpes</h2>
+        <p>A crêpe or crepe is a type of very thin pastry, usually made from wheat flour or buckwheat flour.
+          Can be filled or topped with sweets or savory ingridients. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb4"></div>
+        <h2>Maple Syrup</h2>
+        <p>Made from the xylem sap of maple trees, Canada is known for producing maple syrup. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb5"></div>
+        <h2>Sea Pie</h2>
+        <p>A layered meat pie made with fish or meat; was a delicacy for British sailors during the 18th century. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb6"></div>
+        <h2>Rappie Pie</h2>
+        <p>Rappie pie is a traditional dish from Nova Scotia. Its name is derived from the French "patates râpées" meaning "grated potatoes". </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb7"></div>
+        <h2>Pouding Chômeur</h2>
+        <p>Pouding chômeur, aka poor man's pudding, is a dessert that was created by female factory workers early during the Great Depression in Quebec, Canada.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb8"></div>
+        <h2>Butter Tart</h2>
+        <p>A butter tart is a type of small pastry tart highly regarded in Canadian cuisine and considered one of Canada's quintessential snacks. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb9"></div>
+        <h2>Nanaimo Bar</h2>
+        <p>The Nanaimo bar is a dessert item of Canadian origin. It is a bar dessert which requires no baking and is named after the city of Nanaimo, British Columbia on Vancouver Island. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb10"></div>
+        <h2>Tourtière</h2>
+        <p>Tourtière is a Canadian meat pie dish originating from the province of Quebec, usually made with minced pork, veal or beef. Wild game is often added to enhance the taste of the pie. </p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb11"></div>
+        <h2>Sugar Pie</h2>
+        <p>Sugar pie is a typical dessert of the western European countries of Northern France and Belgium, the Canadian province of Quebec.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb12"></div>
+        <h2>Peameal bacon</h2>
+        <p>Peameal bacon is a type of back bacon made from lean boneless pork loin, trimmed fine, wet cured, and rolled in cornmeal. Development is credited to a Toronto, Ontario, ham and bacon curer, William Davies.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb13"></div>
+        <h2>Smoked Salmon</h2>
+        <p>Smoked salmon is a preparation of salmon, typically a fillet that has been cured and hot or cold smoked. Due to its moderately high price, smoked salmon is considered a delicacy</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb14"></div>
+        <h2>Fish and Brewis</h2>
+        <p>Fish and brewis is a traditional Newfoundland meal consisting of cod and hard bread or hard tack.</p>
+        <button class="link">+</button>
+      </div>
+    </div>
+    <footer class="info">
+      <p>&copy;2017 Amoge O</p>
+    </footer>
+    <script src="slideshow.js" type="text/javascript"></script>
+  </body>
+</html>
